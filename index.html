@@ -1,0 +1,739 @@
+<html>
+
+<head>
+    <title>Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    * {
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    body {
+        background-color: rgb(236, 226, 226);
+
+        width: 100%;
+
+    }
+
+    header {
+        width: 100%;
+        height: 50vw;
+        background-color: rgb(26, 25, 25);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    #girl {
+        border-radius: 16px;
+        max-height: 99%;
+        width: 97vw;
+        margin: 6px 6px;
+    }
+
+    .screen {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+        position: absolute;
+        height: 32.5vw;
+        max-height: 70%;
+        width: 89.5%;
+        margin: 6px 6px;
+        padding: 5vw;
+        border-radius: 16px;
+        font-size: 9vw;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        line-height: 90%;
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+        animation: transitionIn 2s;
+    }
+
+    .screen p {
+        animation: transitionIn 2s;
+        cursor: default;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        top: 2px;
+        height: 49vw;
+        width: 7%;
+        border-radius: 17px;
+        filter: blur(.6px);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(21, 144, 168, 0.4), rgba(97, 97, 97, 0.5));
+    }
+
+    nav:hover {
+        transition-duration: .5s;
+        transition-delay: .2s;
+        width: 20%;
+        filter: blur(0px);
+        padding-left: 4px;
+
+        .home,
+        .contact,
+        .about,
+        .experience {
+            visibility: visible;
+            transition-delay: .5s;
+        }
+
+        .arrow {
+            visibility: hidden;
+        }
+    }
+
+    .home,
+    .experience,
+    .contact,
+    .about {
+        text-decoration: none;
+        font-size: 3vw;
+        color: white;
+        padding-left: 10px;
+        overflow: hidden;
+        visibility: hidden;
+
+    }
+
+    .arrow {
+        height: 5vw;
+        position: relative;
+        top: 18vw;
+        left: 4vw;
+        visibility: visible;
+        opacity: 70%;
+        animation: transitionIn 1s;
+        filter: invert();
+
+    }
+
+    .b {
+        padding-top: 5vw;
+    }
+
+    .text21 {
+        animation: transitionIn 2s;
+        font-size: 5vw;
+        color: white;
+        padding-top: 15vw;
+        padding-left: 10vw;
+        font-weight: 600;
+    }
+
+    .text22 {
+        animation: transitionIn 2s;
+        font-size: 5vw;
+        color: rgba(151, 148, 148, 0.84);
+        padding-top: 10vw;
+        padding-left: 22vw;
+        font-weight: 600;
+    }
+
+    #man {
+        height: 30vw;
+        float: right;
+        border-radius: 20%;
+        padding: 20px;
+        animation: transitionIn 2s;
+    }
+
+    section {
+        margin: 5px 0px;
+        height: 50vw;
+        width: 100%;
+        background-color: rgb(26, 25, 25);
+        border-radius: 16px;
+    }
+
+    footer {
+        margin: 5px 0px;
+        height: 40vw;
+        width: 100%;
+        background-color: rgb(26, 25, 25);
+        border-radius: 16px;
+    }
+
+    #paint {
+        border-radius: 16px;
+        margin: 6px 6px;
+        width: 98.5%;
+        height: 97%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+    }
+
+    .screen2 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+        position: absolute;
+        height: 39vw;
+        max-height: 80%;
+        width: 89.5%;
+        margin: 6px 6px;
+        padding: 5vw;
+        border-radius: 16px;
+        font-size: 9vw;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        line-height: 90%;
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+        animation: transitionIn 2s;
+    }
+
+    .robo {
+        position: absolute;
+        height: 6vw;
+        margin-top: 13vw;
+        z-index: 1;
+        margin-left: 64vw;
+        border-radius: 10px;
+        filter: drop-shadow(12px 12px 12px);
+    }
+
+    .capcut {
+        position: absolute;
+        height: 6vw;
+        margin-top: 24vw;
+        z-index: 1;
+        margin-left: 64vw;
+        border-radius: 50%;
+        border: 2px solid white;
+        filter: drop-shadow(12px 12px 12px white) invert();
+    }
+
+    .exp {
+        position: absolute;
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+        font-size: 6vw;
+        padding-left: 35vw;
+        padding-top: 6vw;
+        text-align: center;
+        z-index: 2;
+        animation: transitionIn 2s;
+    }
+
+    .text31 {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 3vw;
+        padding-top: 15vw;
+        padding-left: 6vw;
+    }
+
+    #vishal {
+
+        height: 30vw;
+        float: right;
+        border-radius: 20px;
+        margin-top: 10vw;
+        margin-right: 3vw;
+        animation: transitionIn 2s;
+        filter: grayscale() drop-shadow(12px 12px 12px);
+    }
+
+    .linkden {
+        height: 4.2vw;
+        float: right;
+        position: relative;
+        top: 17vw;
+        left: 3vw;
+        cursor: hand;
+        animation: transitionIn 2s;
+    }
+
+    .linkden:hover,
+    .insta:hover,
+    .git:hover {
+        scale: 1.2;
+        transition-duration: 1s;
+    }
+
+    .insta {
+        height: 3.5vw;
+        float: right;
+        position: relative;
+        top: 22vw;
+        right: 1vw;
+        cursor: hand;
+        animation: transitionIn 2s;
+    }
+
+    .git {
+        height: 4vw;
+        float: right;
+        position: relative;
+        top: 27vw;
+        right: -7vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid white;
+        cursor: hand;
+        animation: transitionIn 2s;
+    }
+
+    .abt {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        font-size: 6vw;
+        padding-top: 6vw;
+        text-align: center;
+        animation: transitionIn 2s;
+    }
+
+    .text4 {
+        animation: transitionIn 2s;
+        font-size: 3.1vw;
+        color: white;
+        padding-left: 5vw;
+        font-weight: 500;
+        position: relative;
+        margin-right: 30vw;
+        animation: transitionIn 2s;
+    }
+
+    .text5 {
+        color: white;
+        position: absolute;
+        padding-top: 14vw;
+        padding-left: 6vw;
+        font-size: 2.2vw;
+    }
+
+    .ach {
+        position: absolute;
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+        font-size: 6vw;
+        padding-left: 35vw;
+        padding-top: 6vw;
+        text-align: center;
+        z-index: 2;
+        animation: transitionIn 2s;
+    }
+
+    @media only screen and (max-width:500px) {
+        body {
+            background-color: black;
+        }
+
+        section {
+            margin: 5px 0px;
+            height: 140vw;
+            width: 100%;
+            background-color: rgb(26, 25, 25);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        header {
+            width: 100%;
+            height: 130vw;
+            background-color: rgb(26, 25, 25);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        #girl {
+            border-radius: 16px;
+            height: 100%;
+            width: 200%;
+            margin: 6px 6px;
+        }
+
+        .screen {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+            position: absolute;
+            height: 74vw;
+            max-height: 100%;
+            width: 88.5%;
+            margin: 6px 6px;
+            padding-top: 50vw;
+            border-radius: 16px;
+            font-size: 9vw;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            line-height: 90%;
+            transition-timing-function: ease-in;
+            transition-duration: 1s;
+            animation: transitionIn 2s;
+        }
+
+        .screen p {
+            animation: transitionIn 2s;
+            cursor: default;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            top: 2px;
+            margin-left: 7vw;
+            padding-bottom: 3vw;
+            height: 8vw;
+            filter: blur(0px);
+            width: 90%;
+            border-radius: 17px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(21, 144, 168, 0.4), rgba(97, 97, 97, 0.5));
+        }
+
+        nav:hover {
+
+            transition-duration: .5s;
+            transition-delay: 120s;
+            width: 90%;
+            height: 10vw;
+            filter: blur(0px);
+            padding-left: 4px;
+
+            .arrow {
+                visibility: hidden;
+            }
+        }
+
+        .home,
+        .experience,
+        .contact,
+        .about {
+            text-decoration: none;
+            font-size: 4vw;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            visibility: visible;
+
+        }
+
+        .arrow {
+            height: 5vw;
+            position: relative;
+            top: 9vw;
+            left: 40vw;
+            rotate: 90deg;
+            visibility: hidden;
+            opacity: 70%;
+            animation: transitionIn 1s;
+            filter: invert();
+
+        }
+
+        .b {
+            padding-top: 5vw;
+        }
+
+        .text21 {
+            animation: transitionIn 2s;
+            font-size: 5vw;
+            color: white;
+            padding-top: 80vw;
+            padding-left: 10vw;
+            font-weight: 600;
+        }
+
+        .text22 {
+            animation: transitionIn 2s;
+            font-size: 5vw;
+            color: rgba(151, 148, 148, 0.84);
+            padding-top: 10vw;
+            padding-left: 22vw;
+            font-weight: 600;
+        }
+
+        #man {
+            height: 50vw;
+            position: relative;
+            border-radius: 20%;
+            position: absolute;
+            margin-left: 20vw;
+            margin-top: 12vw;
+            animation: transitionIn 2s;
+        }
+
+        footer {
+            margin: 5px 0px;
+            height: 50vw;
+            width: 100%;
+            background-color: rgb(26, 25, 25);
+            border-radius: 16px;
+        }
+
+        #paint {
+            border-radius: 16px;
+            margin: 6px 6px;
+            width: 200%;
+            height: 97%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+        }
+
+        .screen2 {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+            position: absolute;
+            height: 126vw;
+            max-height: 100%;
+            width: 89.5%;
+            padding: 5vw;
+            margin-left: 2px;
+            border-radius: 16px;
+            font-size: 9vw;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            line-height: 90%;
+            transition-timing-function: ease-in;
+            transition-duration: 1s;
+            animation: transitionIn 2s;
+        }
+
+        .robo {
+            position: absolute;
+            height: 12vw;
+            margin-top: 26vw;
+            z-index: 1;
+            margin-left: 20vw;
+            border-radius: 10px;
+            filter: drop-shadow(12px 12px 12px);
+        }
+
+        .capcut {
+            position: absolute;
+            height: 12vw;
+            margin-top: 52vw;
+            z-index: 1;
+            margin-left: 40vw;
+            border-radius: 50%;
+            border: 2px solid white;
+            filter: drop-shadow(12px 12px 12px white) invert();
+        }
+
+        .exp {
+            position: absolute;
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: white;
+            font-size: 9vw;
+            padding-left: 35vw;
+            padding-top: 6vw;
+            text-align: center;
+            z-index: 2;
+            animation: transitionIn 2s;
+        }
+
+        .text31 {
+            position: absolute;
+            z-index: 3;
+            color: white;
+            filter: brightness(200%);
+            font-size: 5vw;
+            padding-top: 42vw;
+            padding-left: 6vw;
+        }
+
+        #vishal {
+
+            height: 60vw;
+            position: absolute;
+            border-radius: 20px;
+            margin-top: 10vw;
+            margin-left: 37vw;
+            animation: transitionIn 2s;
+            filter: grayscale() drop-shadow(12px 12px 12px);
+        }
+
+        .linkden {
+            height: 7vw;
+            position: relative;
+            top: 73vw;
+            left: -48vw;
+            cursor: hand;
+            animation: transitionIn 2s;
+        }
+
+        .linkden:hover,
+        .insta:hover,
+        .git:hover {
+            scale: 1.2;
+            transition-duration: 1s;
+        }
+
+        .insta {
+            height: 6.7vw;
+            float: right;
+            position: relative;
+            top: 73vw;
+            left: -44vw;
+            cursor: hand;
+            animation: transitionIn 2s;
+        }
+
+        .git {
+            height: 7vw;
+            float: right;
+            position: relative;
+            top: 73vw;
+            left: -20vw;
+            background-color: white;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: hand;
+            animation: transitionIn 2s;
+        }
+
+        .abt {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 10vw;
+            padding-top: 83vw;
+            text-align: center;
+            animation: transitionIn 2s;
+        }
+
+        .text4 {
+            animation: transitionIn 2s;
+            font-size: 4vw;
+            color: white;
+            padding-left: 5vw;
+            font-weight: 500;
+            position: relative;
+            margin-right: 3vw;
+            animation: transitionIn 2s;
+            line-height: 1;
+        }
+
+        .text5 {
+            color: white;
+            position: absolute;
+            padding-top: 17vw;
+            padding-left: 5vw;
+            font-size: 2.5vw;
+        }
+
+        .ach {
+            position: absolute;
+            color: white;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: white;
+            font-size: 9vw;
+            padding-left: 27vw;
+            padding-top: 6vw;
+            text-align: center;
+            z-index: 2;
+            animation: transitionIn 2s;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="screen">
+            <p>Hello Everyone <br>I'm a Web Developer</p>
+        </div>
+        <img src="girl.jpeg" id="girl">
+        <p style="color: white; margin-left: 40vw;font-size: 4vw ; opacity: 70%;">Scroll Down... </p>
+        <nav>
+            <img src="right-arrow.png" class="arrow">
+            <div class="b"><a href="#girl" class="home">Home</a></div>
+            <div class="b"><a href="#page4" class="about">About Me</a></div>
+            <div class="b"><a href="#footer1" class="contact">Achievements</a></div>
+            <div class="b"><a href="#paint" class="experience">Experience</a></div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img src="man.jpeg" id="man">
+            <p class="text21">I build the website.Let's discuss yours</p>
+            <p class="text22">Where code meets design!</p>
+        </section>
+
+        <section>
+            <p class="exp">Experience --</p>
+            <p class="text31">Member of AMU ROBOCLUB as Video Editor.
+                <br><br><br>
+                1yr experience of <b>Capcut</b> Video Editing App.
+            </p>
+            <img src="amuroboclub.jpg" class="robo">
+            <img src="capcut.jpeg" class="capcut">
+            <div class="screen2"></div>
+            <img src="paint.jpeg" id="paint">
+        </section>
+
+        <section id="page4">
+            <img src="vishal.jpg" id="vishal">
+            <img src="instagram.png" class="insta">
+            <img src="linkedin (1).png" class="linkden">
+            <img src="github (1).png" class="git">
+            <p class="abt">About Me --</p>
+            <p class="text4">👉I am a Civil Engineering Btech. 2nd year student of ZHCET (ALIGARH MUSLIM
+                UNIVERSITY).<br><br>
+                👉I am a Webdeveloper and Video Editor.<BR><br>
+                👉I have very good knowledge of <b>HTML , CSS , JAVASCRIPT</b> and <b>Python</b>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="ach" id="footer1">achivements --</p>
+        <p class="text5">AIR 317 in
+            Quiz Competition,ISRO Cyberspace
+            Competitions, 2020.<br><br>
+            Certificate by Adobe Digital Disha and Niti
+            Aayog in Professional Development on Digitial
+            Literacy and creativity Skills,2020.<br><br>
+            Certified and Trained by Plezmo Tech
+            Academy on Web App and Mobile App
+            Beginner Module ,2020.<br><br>
+            Certificate of Completion of course named AI for
+            India 2.0 and Python by Guvi through Skill India
+            Digital</p>
+    </footer>
+
+    <script>
+        document.getElementsByClassName('insta')[0].addEventListener('click', function () {
+            open('https://www.instagram.com/vdeval016/')
+        })
+        document.getElementsByClassName('linkden')[0].addEventListener('click', function () {
+            open('https://www.linkedin.com/in/vishal-deval-0a1283296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')
+        })
+        document.getElementsByClassName('git')[0].addEventListener('click', function () {
+            open('https://github.com/VishalDeval')
+        })
+
+
+    </script>
+</body>
+
+</html>
