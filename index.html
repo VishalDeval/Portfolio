@@ -180,7 +180,7 @@
     .screen2 {
         background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
         position: absolute;
-        height: 40vw;
+        height: 39vw;
         max-height: 80%;
         width: 89.5%;
         margin: 6px 6px;
@@ -337,9 +337,9 @@
         animation: transitionIn 2s;
     }
 
-    @media only screen and (orientation:portrait) {
+    @media only screen and (max-width:500px) {
         body {
-            background-color: black;
+            background-color: whitesmoke;
         }
 
         section {
@@ -371,7 +371,7 @@
             position: absolute;
             height: 74vw;
             max-height: 100%;
-            width: 88.5%;
+            width: 89%;
             margin: 6px 6px;
             padding-top: 50vw;
             border-radius: 16px;
@@ -388,6 +388,7 @@
         .screen p {
             animation: transitionIn 2s;
             cursor: default;
+            z-index: 3;
         }
 
         nav {
@@ -395,13 +396,13 @@
             justify-content: space-around;
             position: absolute;
             top: 2px;
-            margin-left: 7vw;
+            margin-left: 5vw;
             padding-bottom: 3vw;
             height: 8vw;
             filter: blur(0px);
             width: 90%;
             border-radius: 17px;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(21, 144, 168, 0.4), rgba(97, 97, 97, 0.5));
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(21, 144, 168, 0.4), rgba(97, 97, 97, 0.5));
         }
 
         nav:hover {
@@ -422,6 +423,9 @@
         .experience,
         .contact,
         .about {
+            margin-left: 0px;
+            
+            padding-left: 0px;
             text-decoration: none;
             font-size: 4vw;
             color: white;
@@ -432,9 +436,9 @@
         }
 
         .arrow {
-            height: 5vw;
-            position: relative;
-            top: 9vw;
+            height: 0vw;
+            position: absolute;
+            top: 9vw;   
             left: 40vw;
             rotate: 90deg;
             visibility: hidden;
@@ -445,7 +449,8 @@
         }
 
         .b {
-            padding-top: 5vw;
+            padding-top: 4vw;
+            padding-bottom: 4vw;
         }
 
         .text21 {
@@ -454,6 +459,7 @@
             color: white;
             padding-top: 80vw;
             padding-left: 10vw;
+            text-align: center;
             font-weight: 600;
         }
 
@@ -462,7 +468,7 @@
             font-size: 5vw;
             color: rgba(151, 148, 148, 0.84);
             padding-top: 10vw;
-            padding-left: 22vw;
+            padding-left: 21vw;
             font-weight: 600;
         }
 
@@ -471,7 +477,7 @@
             position: relative;
             border-radius: 20%;
             position: absolute;
-            margin-left: 20vw;
+            margin-left: 21vw;
             margin-top: 12vw;
             animation: transitionIn 2s;
         }
@@ -540,7 +546,7 @@
             font-style: normal;
             color: white;
             font-size: 9vw;
-            padding-left: 35vw;
+            padding-left: 33vw;
             padding-top: 6vw;
             text-align: center;
             z-index: 2;
@@ -560,10 +566,11 @@
         #vishal {
 
             height: 60vw;
+            width: 30vw;
             position: absolute;
             border-radius: 20px;
             margin-top: 10vw;
-            margin-left: 37vw;
+            margin-left: 34vw;
             animation: transitionIn 2s;
             filter: grayscale() drop-shadow(12px 12px 12px);
         }
@@ -680,7 +687,7 @@
         </section>
 
         <section>
-            <p class="exp">Experience --</p>
+            <p class="exp">Experience </p>
             <p class="text31">Member of AMU ROBOCLUB as Video Editor.
                 <br><br><br>
                 1yr experience of <b>Capcut</b> Video Editing App.
@@ -696,7 +703,7 @@
             <img src="instagram.png" class="insta">
             <img src="linkedin (1).png" class="linkden">
             <img src="github (1).png" class="git">
-            <p class="abt">About Me --</p>
+            <p class="abt">About Me </p>
             <p class="text4">👉I am a Civil Engineering Btech. 2nd year student of ZHCET (ALIGARH MUSLIM
                 UNIVERSITY).<br><br>
                 👉I am a Webdeveloper and Video Editor.<BR><br>
@@ -706,7 +713,7 @@
     </main>
 
     <footer>
-        <p class="ach" id="footer1">achivements --</p>
+        <p class="ach" id="footer1">achivements </p>
         <p class="text5">AIR 317 in
             Quiz Competition,ISRO Cyberspace
             Competitions, 2020.<br><br>
