@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kalam:wght@300;400;700&display=swap');
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+body {
+    background-color: rgb(236, 226, 226);
+
+    width: 100%;
+
+}
+
+header {
+    width: 100%;
+    height: 50vw;
+    background-color: rgb(26, 25, 25);
+    border-radius: 20px;
+    overflow: hidden;
+}
+p{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    
+
+}
+
+#girl {
+    border-radius: 16px;
+    max-height: 99%;
+    width: 97vw;
+    margin: 6px 6px;
+}
+
+.screen {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    height: 32.5vw;
+    max-height: 70%;
+    width: 89.5%;
+    margin: 6px 6px;
+    padding: 5vw;
+    border-radius: 16px;
+    font-size: 9vw;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    line-height: 90%;
+    transition-timing-function: ease-in;
+    transition-duration: 1s;
+    animation: transitionIn 2s;
+}
+
+.screen p {
+    animation: transitionIn 2s;
+    cursor: default;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    top: 2px;
+    height: 49vw;
+    width: 7%;
+    border-radius: 17px;
+    filter: blur(.6px);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(21, 144, 168, 0.4), rgba(97, 97, 97, 0.5));
+}
+
+nav:hover {
+    transition-duration: .5s;
+    transition-delay: .2s;
+    width: 20%;
+    filter: blur(0px);
+    padding-left: 4px;
+
+    .home,
+    .contact,
+    .about,
+    .experience {
+        visibility: visible;
+        transition-delay: .5s;
+    }
+
+    .arrow {
+        visibility: hidden;
+    }
+}
+
+.home,
+.experience,
+.contact,
+.about {
+    text-decoration: none;
+    font-size: 3vw;
+    color: white;
+    padding-left: 10px;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+.arrow {
+    height: 5vw;
+    position: relative;
+    top: 18vw;
+    left: 4vw;
+    visibility: visible;
+    opacity: 70%;
+    animation: transitionIn 1s;
+    filter: invert();
+
+}
+
+.b {
+    padding-top: 5vw;
+}
+
+.text21 {
+    animation: transitionIn 2s;
+    font-size: 5vw;
+    color: white;
+    padding-top: 15vw;
+    padding-left: 10vw;
+    font-weight: 600;
+}
+
+.text22 {
+    animation: transitionIn 2s;
+    font-size: 5vw;
+    color: rgba(151, 148, 148, 0.84);
+    padding-top: 10vw;
+    padding-left: 22vw;
+    font-weight: 600;
+}
+
+#man {
+    height: 30vw;
+    float: right;
+    border-radius: 20%;
+    padding: 20px;
+    animation: transitionIn 2s;
+}
+#page4{
+    height:60vw;
+    width: 100%;
+}
+
+section {
+    margin: 5px 0px;
+    height: 50vw;
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    border-radius: 16px;
+}
+
+footer {
+    margin: 5px 0px;
+    height: 50vw;
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    border-radius: 16px;
+}
+
+#paint {
+    border-radius: 16px;
+    margin: 6px 6px;
+    width: 98.5%;
+    height: 97%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+}
+
+.screen2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    height: 39vw;
+    max-height: 80%;
+    width: 89.5%;
+    margin: 6px 6px;
+    padding: 5vw;
+    border-radius: 16px;
+    font-size: 9vw;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    line-height: 90%;
+    transition-timing-function: ease-in;
+    transition-duration: 1s;
+    animation: transitionIn 2s;
+}
+
+.robo {
+    position: absolute;
+    height: 6vw;
+    margin-top: 13vw;
+    z-index: 1;
+    margin-left: 64vw;
+    border-radius: 10px;
+    filter: drop-shadow(12px 12px 12px);
+}
+
+.capcut {
+    position: absolute;
+    height: 6vw;
+    margin-top: 28vw;
+    z-index: 1;
+    margin-left: 64vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    filter: drop-shadow(12px 12px 12px white) invert();
+}
+
+.exp {
+    position: absolute;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 6vw;
+    padding-left: 35vw;
+    padding-top: 6vw;
+    text-align: center;
+    z-index: 2;
+    animation: transitionIn 2s;
+}
+
+.text31 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 3vw;
+    padding-top: 15vw;
+    padding-left: 6vw;
+}
+
+#vishal {
+
+    height: 30vw;
+    float: right;
+    border-radius: 20px;
+    margin-top: 10vw;
+    margin-right: 3vw;
+    animation: transitionIn 2s;
+    filter: grayscale() drop-shadow(12px 12px 12px);
+}
+
+.linkden {
+    height: 4.2vw;
+    float: right;
+    position: relative;
+    top: 17vw;
+    left: 3vw;
+    cursor: hand;
+    animation: transitionIn 2s;
+}
+
+.linkden:hover,
+.insta:hover,
+.git:hover {
+    scale: 1.2;
+    transition-duration: 1s;
+}
+
+.insta {
+    height: 3.5vw;
+    float: right;
+    position: relative;
+    top: 22vw;
+    right: 1vw;
+    cursor: hand;
+    animation: transitionIn 2s;
+}
+
+.git {
+    height: 4vw;
+    float: right;
+    position: relative;
+    top: 27vw;
+    right: -7vw;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: hand;
+    animation: transitionIn 2s;
+}
+
+.abt {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 6vw;
+    padding-top: 6vw;
+    padding-left: 36vw;
+    animation: transitionIn 2s;
+}
+
+.text4 {
+    animation: transitionIn 2s;
+    font-size: 3.1vw;
+    color: white;
+    padding-left: 5vw;
+    font-weight: 500;
+    position: relative;
+    margin-right: 30vw;
+    animation: transitionIn 2s;
+}
+
+.text5 {
+    color: white;
+    position: absolute;
+    padding-top: 14vw;
+    padding-left: 6vw;
+    font-size: 2.2vw;
+}
+
+.ach {
+    position: absolute;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 6vw;
+    padding-left: 35vw;
+    padding-top: 6vw;
+    text-align: center;
+    z-index: 2;
+    animation: transitionIn 2s;
+}
+
+@media only screen and (orientation:portrait) {
+    body {
+        background-color: whitesmoke;
+    }
+
+    section {
+        margin: 5px 0px;
+        height: 140vw;
+        width: 100%;
+        background-color: rgb(26, 25, 25);
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    #page4{
+        margin: 5px 0px;
+        height: 140vw;
+        width: 100%;
+        background-color: rgb(26, 25, 25);
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    header {
+        width: 100%;
+        height: 130vw;
+        background-color: rgb(26, 25, 25);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    #girl {
+        border-radius: 16px;
+        height: 100%;
+        width: 200%;
+        margin: 6px 6px;
+    }
+
+    .screen {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+        position: absolute;
+        height: 74vw;
+        max-height: 100%;
+        width: 89%;
+        margin: 6px 6px;
+        padding-top: 50vw;
+        border-radius: 16px;
+        font-size: 9vw;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        line-height: 90%;
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+        animation: transitionIn 2s;
+    }
+
+    .screen p {
+        animation: transitionIn 2s;
+        cursor: default;
+        z-index: 3;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 2px;
+        margin-left: 5vw;
+        padding-bottom: 3vw;
+        height: 8vw;
+        filter: blur(0px);
+        width: 90%;
+        border-radius: 17px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(21, 144, 168, 0.4), rgba(97, 97, 97, 0.5));
+    }
+
+    nav:hover {
+
+        transition-duration: .5s;
+        transition-delay: 120s;
+        width: 90%;
+        height: 10vw;
+        filter: blur(0px);
+        padding-left: 4px;
+
+        .arrow {
+            visibility: hidden;
+        }
+    }
+
+    .home,
+    .experience,
+    .contact,
+    .about {
+        margin-left: 0px;
+        
+        padding-left: 0px;
+        text-decoration: none;
+        font-size: 4vw;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        visibility: visible;
+
+    }
+
+    .arrow {
+        height: 0vw;
+        position: absolute;
+        top: 9vw;   
+        left: 40vw;
+        rotate: 90deg;
+        visibility: hidden;
+        opacity: 70%;
+        animation: transitionIn 1s;
+        filter: invert();
+
+    }
+
+    .b {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .text21 {
+        animation: transitionIn 2s;
+        font-size: 5vw;
+        color: white;
+        padding-top: 80vw;
+        padding-left: 10vw;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .text22 {
+        animation: transitionIn 2s;
+        font-size: 5vw;
+        color: rgba(151, 148, 148, 0.84);
+        padding-top: 10vw;
+        padding-left: 21vw;
+        font-weight: 600;
+    }
+
+    #man {
+        height: 50vw;
+        position: relative;
+        border-radius: 20%;
+        position: absolute;
+        margin-left: 21vw;
+        margin-top: 12vw;
+        animation: transitionIn 2s;
+    }
+
+    footer {
+        margin: 5px 0px;
+        height: 60vw;
+        width: 100%;
+        background-color: rgb(26, 25, 25);
+        border-radius: 16px;
+    }
+
+    #paint {
+        border-radius: 16px;
+        margin: 6px 6px;
+        width: 200%;
+        height: 97%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+    }
+
+    .screen2 {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, .4), rgba(0, 0, 0, 0.9));
+        position: absolute;
+        height: 127vw;
+        max-height: 100%;
+        width: 89.5%;
+        padding: 5vw;
+        margin-left: 2px;
+        border-radius: 16px;
+        font-size: 9vw;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        line-height: 90%;
+        transition-timing-function: ease-in;
+        transition-duration: 1s;
+        animation: transitionIn 2s;
+    }
+
+    .robo {
+        position: absolute;
+        height: 12vw;
+        margin-top: 26vw;
+        z-index: 1;
+        margin-left: 20vw;
+        border-radius: 10px;
+        filter: drop-shadow(12px 12px 12px);
+    }
+
+    .capcut {
+        position: absolute;
+        height: 12vw;
+        margin-top: 52vw;
+        z-index: 1;
+        margin-left: 40vw;
+        border-radius: 50%;
+        border: 2px solid white;
+        filter: drop-shadow(12px 12px 12px white) invert();
+    }
+
+    .exp {
+        position: absolute;
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+        font-size: 9vw;
+        padding-left: 33vw;
+        padding-top: 6vw;
+        text-align: center;
+        z-index: 2;
+        animation: transitionIn 2s;
+    }
+
+    .text31 {
+        position: absolute;
+        z-index: 3;
+        color: white;
+        filter: brightness(200%);
+        font-size: 5vw;
+        padding-top: 42vw;
+        padding-left: 6vw;
+    }
+
+    #vishal {
+
+        height: 60vw;
+        width: 30vw;
+        position: absolute;
+        border-radius: 20px;
+        margin-top: 10vw;
+        margin-left: 34vw;
+        animation: transitionIn 2s;
+        filter: grayscale() drop-shadow(12px 12px 12px);
+    }
+
+    .linkden {
+        height: 7vw;
+        position: relative;
+        top: 73vw;
+        left: -50vw;
+        cursor: hand;
+        animation: transitionIn 2s;
+    }
+
+    .linkden:hover,
+    .insta:hover,
+    .git:hover {
+        scale: 1.2;
+        transition-duration: 1s;
+    }
+
+    .insta {
+        height: 6.7vw;
+        float: right;
+        position: relative;
+        top: 73vw;
+        left: -46vw;
+        cursor: hand;
+        animation: transitionIn 2s;
+    }
+
+    .git {
+        height: 7vw;
+        float: right;
+        position: relative;
+        top: 73vw;
+        left: -20vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid white;
+        cursor: hand;
+        animation: transitionIn 2s;
+    }
+
+    .abt {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        font-size: 10vw;
+        padding-top: 83vw;
+        text-align: center;
+        animation: transitionIn 2s;
+    }
+
+    .text4 {
+        animation: transitionIn 2s;
+        font-size: 4vw;
+        color: white;
+        padding-left: 5vw;
+        font-weight: 500;
+        position: relative;
+        margin-right: 3vw;
+        animation: transitionIn 2s;
+        line-height: 1;
+    }
+
+    .text5 {
+        color: white;
+        position: absolute;
+        padding-top: 17vw;
+        padding-left: 5vw;
+        font-size: 2.5vw;
+    }
+
+    .ach {
+        position: absolute;
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: white;
+        font-size: 9vw;
+        padding-left: 27vw;
+        padding-top: 6vw;
+        text-align: center;
+        z-index: 2;
+        animation: transitionIn 2s;
+    }
+}
